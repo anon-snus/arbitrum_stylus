@@ -1,0 +1,203 @@
+2024-09-10 16:25:41.186 | INFO     | withdrawal.main:okx_withdraw:20 - 1/42 wallets
+2024-09-10 16:25:52.870 | INFO     | withdrawal.main:okx_withdraw:20 - 1/42 wallets
+2024-09-10 16:26:26.755 | INFO     | withdrawal.main:okx_withdraw:20 - 1/42 wallets
+2024-09-10 16:26:27.439 | INFO     | withdrawal.main:okx_withdraw:20 - 1/42 wallets
+2024-09-10 17:22:32.626 | ERROR    | withdrawal.okx_actions:collect_funds_from_subaccounts:45 - cannot withdraw from acc 146gdhc, name 'aiohttp_params' is not defined
+2024-09-10 17:22:32.627 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:47 -  ETH  moved from subaccounts ['146gdhc'] 
+2024-09-10 17:22:32.627 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 17:23:04.580 | ERROR    | withdrawal.okx_actions:collect_funds_from_subaccounts:45 - cannot withdraw from acc 146gdhc, name 'aiohttp_params' is not defined
+2024-09-10 17:23:04.581 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:47 -  ETH  moved from subaccounts ['146gdhc'] 
+2024-09-10 17:23:04.581 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:24:59.250 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:47 -  ETH  moved from subaccounts ['146gdhc'] 
+2024-09-10 18:24:59.254 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:30:11.437 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:30:26.168 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:31:10.768 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:31:26.353 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:32:00.882 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:32:12.255 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:32:43.899 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:33:03.326 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:33:27.999 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:34:22.590 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:34:37.186 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:35:21.096 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:35:39.458 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:36:20.667 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:37:05.642 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:38:13.197 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:38:15.425 | ERROR    | __main__:main:20 - cannot withdraw to 0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3, invalid literal for int() with base 10: 'Failed to withdraw from OKX | can not get fee for withdraw'
+2024-09-10 18:39:04.333 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:40:29.571 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:40:31.933 | ERROR    | withdrawal.okx_actions:withdraw:107 - withdraw: 51000, Parameter fee error
+Traceback (most recent call last):
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py", line 25, in <module>
+    asyncio.run(main(wallet='0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3', amount=0.001))
+    │       │   └ <function main at 0x104b8cc20>
+    │       └ <function run at 0x118637880>
+    └ <module 'asyncio' from '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x1186f7640>
+           │      └ <function Runner.run at 0x118637c40>
+           └ <asyncio.runners.Runner object at 0x1064ed290>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x118635800>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x1064ed290>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x118635760>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x118637560>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x118487ce0>
+    └ <Handle <TaskStepMethWrapper object at 0x11bf90d30>()>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x11bf90d30>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x11bf90d30>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x11bf90d30>()>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py", line 16, in main
+    id = await okx_actions.withdraw(to_address=wallet, amount=amount, token_symbol='ETH', chain=chain)
+               │           │                   │              │                                 └ 'Arbitrum One'
+               │           │                   │              └ 0.001
+               │           │                   └ '0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3'
+               │           └ <function OKXActions.withdraw at 0x11bf87b00>
+               └ <withdrawal.okx_actions.OKXActions object at 0x11bf9f3d0>
+
+> File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/okx_actions.py", line 95, in withdraw
+    withdrawal_token = await self.okx_client.asset.withdrawal(
+                             │    │          │     └ <function Asset.withdrawal at 0x11bf87240>
+                             │    │          └ <libs.py_okx_async.asset.Asset.Asset object at 0x11ba6da90>
+                             │    └ <libs.py_okx_async.OKXClient.OKXClient object at 0x11bf9f410>
+                             └ <withdrawal.okx_actions.OKXActions object at 0x11bf9f3d0>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/asset/Asset.py", line 227, in withdrawal
+    response = await self.make_request(
+                     │    └ <function Base.make_request at 0x11bf86160>
+                     └ <libs.py_okx_async.asset.Asset.Asset object at 0x11ba6da90>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/Base.py", line 120, in make_request
+    response = await async_post(
+                     └ <function async_post at 0x11bf85bc0>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/utils.py", line 56, in async_post
+    raise exceptions.APIException(response=response, status_code=status_code)
+          │          │                     │                     └ 400
+          │          │                     └ {'code': '51000', 'data': [], 'msg': 'Parameter fee error'}
+          │          └ <class 'libs.py_okx_async.exceptions.APIException'>
+          └ <module 'libs.py_okx_async.exceptions' from '/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/excepti...
+
+libs.py_okx_async.exceptions.APIException: 51000, Parameter fee error
+2024-09-10 18:40:31.939 | ERROR    | __main__:main:20 - cannot withdraw to 0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3, invalid literal for int() with base 10: 'Failed to withdraw from OKX: 51000, Parameter fee error'
+2024-09-10 18:41:30.343 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:41:33.084 | ERROR    | withdrawal.okx_actions:withdraw:108 - withdraw: 51000, Parameter fee error
+Traceback (most recent call last):
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py", line 25, in <module>
+    asyncio.run(main(wallet='0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3', amount=0.001))
+    │       │   └ <function main at 0x1044acc20>
+    │       └ <function run at 0x1075ff880>
+    └ <module 'asyncio' from '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/__init__.py'>
+
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x112c50ee0>
+           │      └ <function Runner.run at 0x1075ffc40>
+           └ <asyncio.runners.Runner object at 0x107611bd0>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x1075fd800>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x107611bd0>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x1075fd760>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x1075ff560>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x107587ce0>
+    └ <Handle <TaskStepMethWrapper object at 0x112f10700>()>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x112f10700>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x112f10700>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x112f10700>()>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/main.py", line 16, in main
+    id = await okx_actions.withdraw(to_address=wallet, amount=amount, token_symbol='ETH', chain=chain)
+               │           │                   │              │                                 └ 'Arbitrum One'
+               │           │                   │              └ 0.001
+               │           │                   └ '0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3'
+               │           └ <function OKXActions.withdraw at 0x112f0bb00>
+               └ <withdrawal.okx_actions.OKXActions object at 0x112f232d0>
+
+> File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/withdrawal/okx_actions.py", line 96, in withdraw
+    withdrawal_token = await self.okx_client.asset.withdrawal(
+                             │    │          │     └ <function Asset.withdrawal at 0x112f0b240>
+                             │    │          └ <libs.py_okx_async.asset.Asset.Asset object at 0x110f343d0>
+                             │    └ <libs.py_okx_async.OKXClient.OKXClient object at 0x112f23310>
+                             └ <withdrawal.okx_actions.OKXActions object at 0x112f232d0>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/asset/Asset.py", line 227, in withdrawal
+    response = await self.make_request(
+                     │    └ <function Base.make_request at 0x112f0a160>
+                     └ <libs.py_okx_async.asset.Asset.Asset object at 0x110f343d0>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/Base.py", line 120, in make_request
+    response = await async_post(
+                     └ <function async_post at 0x112f09bc0>
+
+  File "/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/utils.py", line 56, in async_post
+    raise exceptions.APIException(response=response, status_code=status_code)
+          │          │                     │                     └ 400
+          │          │                     └ {'code': '51000', 'data': [], 'msg': 'Parameter fee error'}
+          │          └ <class 'libs.py_okx_async.exceptions.APIException'>
+          └ <module 'libs.py_okx_async.exceptions' from '/Users/daniilgaripov/Documents/scripts/stylus_arbitrum/libs/py_okx_async/excepti...
+
+libs.py_okx_async.exceptions.APIException: 51000, Parameter fee error
+2024-09-10 18:41:33.096 | ERROR    | __main__:main:20 - cannot withdraw to 0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3, invalid literal for int() with base 10: 'Failed to withdraw from OKX: 51000, Parameter fee error'
+2024-09-10 18:43:44.490 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 18:43:48.950 | INFO     | withdrawal.okx_actions:withdraw:102 - withdrawal request sent: 229597233, wallet: 0x71B4A1BA05A360bBf96A70B93D6d93416B064cC3, token, chain: ('ETH', 'Arbitrum One'), amount: 0.001
+2024-09-10 18:53:47.270 | INFO     | tasks.mint:mint:31 - 0xe31270f155D10372FC9dC749cb2EfC3b4dC1cf59  successfully minted 4 nfts : 0x3d93e975773a8f556cceb1e491de69edaf9fd66c424dfe4433f659cb1d36182b
+2024-09-10 18:53:47.272 | ERROR    | tasks.mint:mint:32 - 0xe31270f155D10372FC9dC749cb2EfC3b4dC1cf59 did not mint nft :( !
+2024-09-10 19:04:14.106 | ERROR    | tasks.mint:mint:36 - {'code': -32000, 'message': 'failed with 715160 gas: max fee per gas less than block base fee: address 0xFFEFa6965aCC0B56F3Ba163F4f4E230C19aFC70E, maxFeePerGas: 15268000, baseFee: 15300000'}
+2024-09-10 19:05:38.801 | ERROR    | tasks.mint:mint:35 - {'code': -32000, 'message': 'failed with 726774 gas: max fee per gas less than block base fee: address 0xFFEFa6965aCC0B56F3Ba163F4f4E230C19aFC70E, maxFeePerGas: 15024001, baseFee: 15146000'}
+2024-09-10 19:06:44.059 | INFO     | tasks.mint:mint:34 - 0x517255FDc978E3ef67989af76b070098d8881D0b  successfully minted 4 nfts : 0x49f6224f615f3fbb07c69119ca0ec87f0b107847efd7c7424e988e4fc00119e3
+2024-09-10 19:06:44.060 | ERROR    | tasks.mint:mint:35 - 0x517255FDc978E3ef67989af76b070098d8881D0b did not mint nft :( !
+2024-09-10 19:08:06.642 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 19:08:10.812 | INFO     | withdrawal.okx_actions:withdraw:102 - withdrawal request sent: 229602482, wallet: 0xFFEFa6965aCC0B56F3Ba163F4f4E230C19aFC70E, token, chain: ('ETH', 'Arbitrum One'), amount: 0.00104
+2024-09-10 19:09:57.854 | SUCCESS  | withdrawal.okx_actions:try_to_get_tx_hash:76 - successful withdrawal, tx: 0x55ccd7c3fcf7316c1c08822867bfcba3038cbe7fc76a1a9fdddae244d4901776
+2024-09-10 19:10:00.413 | INFO     | tasks.mint:mint:32 - 0xFFEFa6965aCC0B56F3Ba163F4f4E230C19aFC70E  successfully minted 5 nfts : 0x34ad2026b2e61b6a459fd2cae34b2bb224cc84a6066e0eb1de00daea81bfcea0
+2024-09-10 19:10:00.414 | ERROR    | tasks.mint:mint:33 - 0xFFEFa6965aCC0B56F3Ba163F4f4E230C19aFC70E did not mint nft :( !
+2024-09-10 19:12:03.685 | INFO     | withdrawal.okx_actions:collect_funds_from_subaccounts:48 - no balances on subaccounts
+2024-09-10 19:12:07.318 | INFO     | withdrawal.okx_actions:withdraw:102 - withdrawal request sent: 229603357, wallet: 0x517255FDc978E3ef67989af76b070098d8881D0b, token, chain: ('ETH', 'Arbitrum One'), amount: 0.0019800000000000004
+2024-09-10 19:13:53.761 | SUCCESS  | withdrawal.okx_actions:try_to_get_tx_hash:76 - successful withdrawal, tx: 0x8dcb82800092a7189635b55be26dfe251b1ca404511bde35030c69c2a0be3924
+2024-09-10 19:13:55.538 | ERROR    | tasks.mint:mint:36 - 0x6d2f8e50
+2024-09-10 19:13:55.542 | INFO     | tasks.base:sleep:123 - Sleeping 112 seconds
+2024-09-10 19:14:59.252 | INFO     | tasks.mint:mint:32 - 0x517255FDc978E3ef67989af76b070098d8881D0b  successfully minted 1 nfts : 0x15db476985a13729d7b2ac0001bf1bd6a098af9f5cbf72c1360b155327fea9b0
+2024-09-10 19:14:59.254 | INFO     | tasks.base:sleep:123 - Sleeping 119 seconds
+2024-09-10 19:16:54.581 | INFO     | tasks.base:wait_for_gwei:133 - current gas is too high 5.324627541 > 1
+2024-09-10 19:17:22.377 | INFO     | tasks.base:wait_for_gwei:133 - current gas is too high 5.203634172 > 1
+2024-09-10 19:17:33.257 | INFO     | tasks.base:wait_for_gwei:133 - current gas is too high 5.312391294 > 1

@@ -1,0 +1,13 @@
+[
+  {"constant": false,
+	"inputs": [{
+		"name": "amountOutMin",
+		"type": "uint256"
+	}],
+		"name": "mint",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
